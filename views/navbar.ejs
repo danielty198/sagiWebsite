@@ -1,0 +1,13 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <a class="navbar-brand" href="/">sagis logo</a>
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-1">
+            <% const navItems = ["Home", "Workouts", "Contact", "Log in"] %>
+            <% for(let i = 0; i < navItems.length; i++){ %>
+                <li class="navbar-item">
+                    <a class="nav-link" herf="/<%= navItems[i] %>"><%= navItems[i] %></a>
+                </li>
+            <% } %>
+        </ul>
+    </div>
+</nav>
